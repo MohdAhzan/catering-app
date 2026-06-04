@@ -1,0 +1,38 @@
+{
+  "expo": {
+    "name": "CateringApp",
+    "slug": "catering-app",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "userInterfaceStyle": "light",
+    "ios": {
+      "supportsTablet": true,
+      "bundleIdentifier": "com.yourcompany.cateringapp",
+      "infoPlist": {
+        "NSCameraUsageDescription": "Used to scan expense bills",
+        "NSPhotoLibraryUsageDescription": "Used to attach bill images to expenses"
+      }
+    },
+    "android": {
+      "package": "com.yourcompany.cateringapp",
+      "permissions": [
+        "CAMERA",
+        "READ_EXTERNAL_STORAGE",
+        "WRITE_EXTERNAL_STORAGE",
+        "INTERNET"
+      ]
+    },
+    "web": {
+    },
+    "plugins": [
+      [
+        "expo-build-properties",
+        {
+          "android": {
+            "usesCleartextTraffic": true
+          }
+        }
+      ]
+    ]
+  }
+}
